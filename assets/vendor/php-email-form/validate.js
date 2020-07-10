@@ -106,7 +106,7 @@
     }
     
     this_form.find('.sent-message').slideUp();
-    this_form.find('.error-message').slideUp();
+    //this_form.find('.error-message').slideUp();
     this_form.find('.loading').slideDown();
 
     if ( $(this).data('recaptcha-site-key') ) {
