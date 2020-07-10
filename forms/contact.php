@@ -7,6 +7,8 @@
   */
 
   // Replace contact@example.com with your real receiving email address
+
+  /**
   $receiving_email_address = 'contact@example.com';
 
   if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
@@ -31,11 +33,24 @@
     'password' => 'pass',
     'port' => '587'
   );
-  */
+  
 
   $contact->add_message( $_POST['name'], 'From');
   $contact->add_message( $_POST['email'], 'Email');
   $contact->add_message( $_POST['message'], 'Message', 10);
 
   echo $contact->send();
+  */
+
+
+
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+    $subject = $_POST['subject'];
+    $formcontent = "From: $name \n Message: $message";
+    $recipient = "kiranamak@gmail.com";
+    $meailheader = "From: $email \r\n";
+    mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
+    echo "Thank you!";
 ?>
