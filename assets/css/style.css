@@ -2101,7 +2101,7 @@ section {
 
 #footer .footer-top {
   background: #1c1f18;
-  padding: 60px 0 30px 0;
+  padding: 30px 0 0 0;
 }
 
 #footer .footer-top .footer-info {
@@ -2233,6 +2233,7 @@ section {
 }
 
 #footer .copyright {
+  color: gray;
   text-align: center;
   padding-top: 30px;
 }
@@ -2241,5 +2242,5 @@ section {
   padding-top: 10px;
   text-align: center;
   font-size: 13px;
-  color: #fff;
+  color: gray;
 }
