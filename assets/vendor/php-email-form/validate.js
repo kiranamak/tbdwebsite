@@ -131,6 +131,7 @@
       timeout: 40000
     }).done( function(msg){
       if (msg == 'OK') {
+          //window.print();
         this_form.find('.loading').slideUp();
         this_form.find('.sent-message').slideDown();
         this_form.find("input:not(input[type=submit]), textarea").val('');
@@ -158,6 +159,7 @@
         error_msg += data.responseText;
       }
       this_form.find('.loading').slideUp();
+      this_form.find('.sent-message').slideDown();
       //this_form.find('.error-message').slideDown().html(error_msg);
     });
   }
