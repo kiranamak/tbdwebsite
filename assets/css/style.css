@@ -478,7 +478,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 0;
   font-family: "Poppins", sans-serif;
-  color: #646c55;
+  color: var(--accent-color);
 }
 
 .section-title p {
