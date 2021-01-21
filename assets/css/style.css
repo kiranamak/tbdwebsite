@@ -478,7 +478,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 0;
   font-family: "Poppins", sans-serif;
-  color: #646c55;
+  color: var(--accent-color);
 }
 
 .section-title p {
@@ -808,6 +808,7 @@ section {
 .work-process .content h3 {
   font-weight: 600;
   font-size: 26px;
+    color: var(--dark-accent);
 }
 
 .work-process .content ul {
@@ -1513,13 +1514,15 @@ section {
 .team .member .social {
   position: absolute;
   left: 0;
-  bottom: -40px;
+  /*bottom: -342px;*/
+   /*bottom: var(--height);*/
   right: 0;
-  height: 40px;
+  height: 100%;
   opacity: 0;
   transition: bottom ease-in-out 0.4s;
   text-align: center;
   background: rgba(15, 44, 123, 0.8);
+    color: white;
 }
 
 .team .member .social a {
@@ -2252,3 +2255,12 @@ section {
   font-size: 13px;
   color: gray;
 }
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+
