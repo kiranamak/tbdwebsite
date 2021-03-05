@@ -72,10 +72,19 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Disable AOS delay on mobile
 --------------------------------------------------------------*/
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 576px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
+  #wrapper {width:95%;  margin: 0 auto; }
+
+  #header {width:100%; margin: 0 auto; }
+
+  #content {width:100%; margin: 0 auto; }
+
+  #sidebar {width:100%; margin: 0 auto; }
+
+  #footer {width:100%; margin: 0 auto; }
 }
 
 /*--------------------------------------------------------------
