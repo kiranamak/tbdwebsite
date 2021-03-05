@@ -723,6 +723,27 @@ section {
   font-weight: 700;
 }
 
+@media (max-width: 450px) 
+{
+    .cta h3 {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 320px) 
+{
+    .cta h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 280px) 
+{
+    .cta h3 {
+        font-size: 17px;
+    }
+}
+
 .cta p {
   color: #fff;
 }
